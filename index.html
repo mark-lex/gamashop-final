@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- KEYWORDS -->
+    <meta name="keywords" content="tienda, online, ropa, accesorios, prendas, indumentaria, medias, pantalones, camisas"/>
+    <!-- DESCRIPTION-->
+    <meta name="description" content="Encuentra variedad de ropa de temporada, accesorios y más en un solo lugar. Hacemos envíos dentro de Lima Metropolitana."/>
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="./img/favicon-gamashop.png" type="png" sizes="192px"/>
+    <!-- ANIMATIONS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- BOXICONS -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+    <!-- CSS BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous"/>
+    <!-- MY CSS -->
+    <link rel="stylesheet" href="./css/estilos.css"/>
+    <title>Gamashop.pe | Tienda Online</title>
+  </head>
+  <body>
+    <header>
+      <div class="notif notif-closeable">
+        <span class="notif-text">
+          <p><i class='bx bxs-truck'></i><strong>Envíos gratis </strong> de productos desde S/50</p>
+        </span>
+        <button type="button" class="x-icon notif-close">
+          <i class='bx bx-x'></i>
+        </button>
+      </div>
+      <nav class="navbar navbar-dark navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html" target="_self"
+            ><img src="./img/logo-gamashop-white.png" alt="logo Gamashop"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="./pages/about.html" target="_self"
+                  >Acerca de</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/services.html" target="_self">Servicios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/products.html" target="_self">Tienda</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/contact.html" target="_self">Contacto</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Mi cuenta
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Iniciar sesión</a></li>
+                  <li><a class="dropdown-item" href="#">Registrarse</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Centro de ayuda</a></li>
+                </ul>
+              </li>
+            </ul>
+            <!-- <button type="button" class="btn btn-outline-light position-relative" id="seeCart">
+              Carrito <i class='bx bx-shopping-bag'></i>
+              <span id="quantityCart" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0
+                <span class="visually-hidden">unread messages</span>
+              </span>
+            </button> -->
+            <button type="button" class="btn btn-outline-light position-relative" id="seeCart"><a href="./pages/products.html">Carrito <i class='bx bx-shopping-bag'></i></a>
+              <span id="quantityCart" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0
+                <span class="visually-hidden">unread messages</span>
+              </span>
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <h1 class="animate__animated animate__slideInDown">
+          Te damos la bievenida a Gamashop.pe
+        </h1>
+        <p>
+          Variedades en ropa sport, ropa íntima y accesorios en general.
+        </p>
+        <a href="./pages/products.html">IR LA TIENDA →</a>
+      </section>
+
+      <section class="servicios">
+        <h3>Servicios</h3>
+        <h2>Tenemos dos tipos de servicios para ti.</h2>
+
+        <!--Modal Content-->
+        <!-- <div id="modalContainer" class="modal-container"></div> -->
+
+        <div class="servicios-tipos">
+          <div>
+            <img
+              src="./img/home-service1.jpg"
+              alt="servicio de compras por stock"
+            />
+            <h4>Compras por stock</h4>
+            <p>
+              El servicio está dirigido a todos los clientes que deseen adquirir nuestros productos disponibles en el catálogo de la tienda.
+            </p>
+            <a href="./pages/services.html" target="_self">Leer más →</a>
+          </div>
+
+          <div>
+            <img
+              src="./img/home-service2.jpg"
+              alt="servicio de compras por pedido"
+            />
+            <h4>Compras por pedido</h4>
+            <p>
+              Está dirigido a todos los clientes que estén interesados en realizar una compra de algún producto especial, fuera del catálogo.
+            </p>
+            <a href="./pages/services.html" target="_self">Leer más →</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="productos">
+        <h3>Productos</h3>
+        <h2>Te ofrecemos una amplia selección de productos.</h2>
+
+        <div class="productos-contenedor">
+          <div class="productos-varios">
+            <div>
+              <img
+                src="./img/img-producto-1C.jpg"
+                alt="joggers sport para mujer"
+              />
+              <h4>Joggers (mujer)</h4>
+              <p>Arma tu look relax de temporada. Tela Drill. Disponible en varios colores.</p>
+            </div>
+
+            <div class="content-circle">
+              <div class="circle"></div>
+              <div class="circle"></div>
+              <div class="circle"></div>
+            </div>
+
+            <a href="./pages/products.html" target="_self">Ver más →</a>
+          </div>
+
+          <div class="productos-varios">
+            <div>
+              <img
+                src="./img/img-producto-2B.jpg"
+                alt="polos cuello camisero para hombre"
+              />
+              <h4>Polos (hombre)</h4>
+              <p>También hay para ellos. Polos tipo cuello camisero. Disponible en diferentes colores.</p>
+            </div>
+
+            <div class="content-circle">
+              <div class="circle"></div>
+              <div class="circle"></div>
+              <div class="circle"></div>
+            </div>
+
+            <a href="./pages/products.html" target="_self">Ver más →</a>
+          </div>
+
+          <div class="productos-varios">
+            <div>
+              <img src="./img/img-producto-3B.jpg" alt="vinchas para cabello" />
+              <h4>Vinchas</h4>
+              <p>Accesorios. Vinchas de varios colores para combinar con tu outfit preferido.</p>
+            </div>
+
+            <div class="content-circle">
+              <div class="circle"></div>
+              <div class="circle"></div>
+              <div class="circle"></div>
+              <div class="circle"></div>
+            </div>
+
+            <a href="./pages/products.html" target="_self">Ver más →</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="pedidos">
+        <h3>¿Cómo hacer un pedido?</h3>
+        <h2>Te mostramos el proceso, fácil y sencillo.</h2>
+
+        <div class="pedidos-pasos">
+          <div>
+            <img src="./img/search.png" alt="icono de selección" />
+            <h4>Paso 1</h4>
+            <p>Busca el producto de tu preferencia.</p>
+          </div>
+          <div>
+            <img
+              src="./img/shopping-cart.png"
+              alt="icono de carrito de compra"
+            />
+            <h4>Paso 2</h4>
+            <p>Realiza tu compra de forma segura.</p>
+          </div>
+          <div>
+            <img src="./img/package.png" alt="icono de empaque de envío" />
+            <h4>Paso 3</h4>
+            <p>Elige la opción de envío que desees.</p>
+          </div>
+          <div>
+            <img src="./img/home.png" alt="icono de casa" />
+            <h4>Paso 4</h4>
+            <p>Recibe tu producto en la puerta de tu casa.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="suscribir">
+        <h3>Suscríbete</h3>
+        <h2>Sé parte de nuestra comunidad.</h2>
+
+        <div class="suscribir-bloque">
+          <img
+            src="./img/home-subscribe.jpg"
+            alt="suscríbete a nuestra comunidad"
+          />
+
+          <div class="suscribir-formu">
+            <p>
+              Déjanos tus datos y te enviaremos un boletín semanal con los
+              nuevos productos que tengamos en stock.
+            </p>
+            <form action="" method="" enctype="">
+              <div>
+                <label for="nombre">Nombre</label>
+                <input
+                  type="text"
+                  id="nombre"
+                  placeholder="Tu nombre"
+                  required
+                />
+              </div>
+
+              <div>
+                <label for="correo">Correo electrónico</label>
+                <input
+                  type="email"
+                  id="correo"
+                  placeholder="Tu email"
+                  required
+                />
+              </div>
+
+              <div>
+                <button type="submit" name="suscribir">Suscribirme</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="box">
+        <img src="./img/logo-gamashop-white.png" alt="logo Gamashop blanco" />
+        <div class="redes">
+          <h3>Nuestras redes</h3>
+          <div class="list">
+            <ul>
+              <li>
+                <a href="https://www.facebook.com/gama.shop.pe" target="_blank">
+                  <i class="bx bxl-facebook-circle bx-tada-hover"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/gama.shop.pe"
+                  target="_blank"
+                >
+                  <i class="bx bxl-instagram bx-tada-hover"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <h3>Centro de Ayuda</h3>
+          <ul>
+            <li><a href="#">Envíos</a></li>
+            <li><a href="#">Opciones de pago</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Mapa de Sitio</h3>
+          <ul>
+            <li><a href="./pages/about.html">Acerca de</a></li>
+            <li><a href="./pages/services.html">Servicios</a></li>
+            <li><a href="./pages/products.html">Tienda</a></li>
+            <li><a href="./pages/contact.html">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+      <p>© 2023 GamaShop.pe | All Rights Reserved</p>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+      integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+      crossorigin="anonymous"></script>
+      <script src="./js/main.js"></script>
+    <script src="./js/products.js"></script>
+    <script src="./js/cart.js"></script>
+  </body>
+</html>

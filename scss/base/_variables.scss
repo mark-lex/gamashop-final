@@ -1,0 +1,162 @@
+//!VARIABLES
+//BACKGROUND
+$bg-colour: rgba(240, 223, 255, 0.4);
+$bg-colour-notif: rgba(62, 31, 147, 0.7);
+$bg-colour-modal: #e7e8e8;
+$bg-colour-modal-header: #2a137a;
+$bg-colour-white: white;
+
+//!LISTAS
+//PALETTE
+$colour-palette: 
+#2a137a, 
+#3e1f93, 
+#5a31b7, 
+#7b48db, 
+#9f63ff, 
+#bb8aff, 
+#cca1ff,
+#dfc0ff, 
+#f0dfff;
+
+//TEXT
+$text-colour: 
+#131815, 
+#e7e8e8, 
+white;
+
+//SUCCESS, WARNING, INFO, ERROR COLOUR
+$extra-colour:
+#34C759, //success 1
+#62DD75, //success 2
+#FFCC00, //warning 1
+#FFDC3F, //warning 2
+#007AFF, //info 1
+#3FA4FF, //info 2
+#DB3549, //error 1
+#FF3B30; //error 2
+
+
+//FONT-SIZE
+$font-size: 
+4rem, //1
+3.5rem, //2
+3rem, //3
+2.5rem, //4
+2rem, //5
+1.5rem, //6
+1.4rem, //7
+1.2rem, //8
+1rem, //9
+0.9rem, //10
+0.8rem; //11
+
+//!MAPS
+//BUTTON FOR DESKTOP
+$button-home: (
+    fnt-size: nth($font-size , 9 ),
+    fnt-weight: 300,
+    deco: none,
+    fnt-colour: nth($colour-palette , 5 ),
+    bord: 1px solid nth($colour-palette , 5 ),
+    b-radius: 10px,
+    padd: 15px 20px,
+    trans: 300ms ease-in,
+    m-left: 0px,
+    cur: pointer,
+);
+
+$button: (
+    fnt-size: nth($font-size , 9 ),
+    fnt-weight: 300,
+    deco: none,
+    fnt-colour: nth($colour-palette , 5 ),
+    bord: 1px solid nth($colour-palette , 5 ),
+    b-radius: 10px,
+    padd: 8px 15px,
+    trans: 300ms ease-in,
+    m-left: 0px,
+    cur: pointer,
+);
+
+//BUTTON FOR MEDIA-QUERY
+$btn-mq-home: (
+    fnt-size: nth($font-size , 9 ),
+    fnt-weight: 300,
+    deco: none,
+    fnt-colour: nth($text-colour , 3 ),
+    bg-colour: nth($colour-palette , 4 ),
+    bord: 0px,
+    b-radius: 10px,
+    padd: 15px 20px,
+    cur: pointer,
+);
+
+$btn-mq: (
+    fnt-size: nth($font-size , 9 ),
+    fnt-weight: 300,
+    deco: none,
+    fnt-colour: nth($text-colour , 3 ),
+    bg-colour: nth($colour-palette , 4 ),
+    bord: 0px,
+    b-radius: 10px,
+    padd: 8px 15px,
+    cur: pointer,
+);
+
+//INPUTS (INDEX)
+$input: (
+    fnt-size: nth($font-size , 9 ),
+    fnt-weight: 300,
+    bord: 1px solid nth($text-colour , 2 ),
+    b-radius: 5px,
+    padd: 10px 15px,
+    w:360px,
+    h:48px,
+);
+
+//!EXTENDS
+
+%intro {
+    background-color: $bg-colour;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 100px;
+    color: nth($text-colour , 1 );
+}
+
+%div {
+    width: 500px;
+    text-align: left;
+}
+
+%title {
+    font-size: nth($font-size , 2 );
+    font-weight: 700;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+%paragraph {
+    font-size: nth($font-size , 5 );
+    font-weight: 200;
+    letter-spacing: 0.5px;
+    margin-bottom: 40px;
+}
+
+%img {
+    border-radius: 0px 0px 10px 10px;
+    width: 750px;
+    height: 500px;
+    object-fit: cover;
+}
+
+//!MIXINS
+
+@mixin text ($size, $weight, $spacing, $padd) {
+    font-size: $size;
+    font-weight: $weight;
+    letter-spacing: $spacing;
+    padding: $padd;
+}

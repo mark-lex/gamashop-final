@@ -1,0 +1,79 @@
+/*-----ACERCA DE-----*/
+
+//INTRO
+.intro {
+    @extend %intro;
+    div {
+        @extend %div;
+        h1{
+            @extend %title;
+        }
+        p {
+            @extend %paragraph;
+        }
+    }
+    img{
+        @extend %img;
+    }
+}
+
+/*-about-*/
+.about {
+    margin: 5% 7% 5% 46%;
+    padding: 20px 0px;
+    color: nth($text-colour , 1 );
+    p{
+        line-height: 2rem;
+    }
+}
+
+/*-conócenos-generales-*/
+.generales{
+    width: 100%;
+    height: 80vh;
+    padding-top: 20px;
+    color: nth($text-colour , 1 );
+    h3 {
+        @include text (nth($font-size , 6 ), 400, 5px, 20px 10px 10px 10px);
+        text-transform: uppercase;
+        text-align: center;
+    }
+    h2 {
+        @include text (nth($font-size , 5 ), 200, 0.5px, 0px 10px 10px 10px);
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .generales-content {
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        gap: 40px;
+        justify-items: center;
+        padding: 30px;
+        .box {
+            display: flex;
+            height: 100%;
+            flex-direction: column;
+            justify-content: center;
+            background-color: $bg-colour;
+            text-align: center;
+            border-radius: 10px;
+            padding: 40px;
+            h4 {
+                @include text (nth($font-size , 5 ), 700, 2px, 0px 0px 10px 0px);
+                text-transform: uppercase;
+            }
+        }
+        div {
+            img {
+                border-radius: 10px;
+                width: 350px;
+                height: 350px;
+                object-fit: cover;
+            }
+        }
+    }
+}

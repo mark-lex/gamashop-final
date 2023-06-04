@@ -1,0 +1,126 @@
+/*-----HEADER-----*/
+
+header {
+    display: flex;
+    flex-direction: column;
+    background-color: nth($colour-palette , 5 );
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    .notif{
+        position: relative;
+        overflow: hidden;
+        background-color: $bg-colour-notif;
+        color: nth($text-colour , 3 );
+        max-height: 100px;
+        transition: max-height 300ms cubic-bezier(0, 0, 0.38, 1);
+        transform: translateZ(0);
+        z-index: 29;
+        .notif-text{
+            display: block;
+            max-width: 100%;
+            padding: 10px 15px;
+            text-align: center;
+            letter-spacing: 0;
+            line-height: 24px;
+            transition: opacity 750ms ease;
+            p{
+                display: flex;
+                justify-content: center;
+                margin-bottom: 0;
+                strong{
+                    padding-right: 5px;
+                    font-weight: 600;
+                }
+                i {
+                    color: nth($extra-colour , 2 );
+                    font-size: nth($font-size , 6 );
+                    padding-right: 10px;
+                }
+            }
+        }
+        .x-icon {
+            background-color: transparent;
+            border: transparent;
+            color: nth($text-colour , 3 );
+            padding: 0 10px;
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+            transition: opacity 1000ms ease 800ms;
+            &:hover {
+                color: nth($colour-palette , 8 );
+            }
+            i {
+                font-size: nth($font-size , 6 );
+            }
+        }
+        .notif-close {
+            display: block;
+            position:absolute;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+            transition: opacity 1000ms ease 800ms;
+            padding: 0 10px;
+            cursor: pointer;
+            z-index: 2;
+        }
+    }
+    .nofif-closed {
+        max-height: 0 !important;
+    }
+    .navbar {
+        padding: 10px 20px 5px 20px;
+        width: 100%;
+        .container-fluid {
+            .navbar-brand {
+                img {
+                    width: 90px;
+                    height: 100%;
+                    object-fit: contain;
+                }
+            }
+            .navbar-collapse {
+                flex-grow: initial;
+                .navbar-nav {
+                    margin-right: 30px;
+                    .nav-item {
+                        .nav-link {
+                            color: nth($text-colour , 2 );
+                            font-size: nth($font-size , 9 );
+                            transition: 300ms ease-in;
+                            &:hover {
+                                color: nth($text-colour , 3 );
+                                text-decoration: underline;
+                                text-underline-position: under;
+                            }
+                        }
+                    }
+                }
+            }
+            .btn {
+                display: flex;
+                align-items: center;
+                color: nth($text-colour , 3 );
+                &:hover{
+                    color: nth($text-colour , 1 );
+                    background-color: $bg-colour-white;
+                }
+                a {
+                    text-decoration: none;
+                    color: nth($text-colour , 3 );
+                    &:hover{
+                        color: nth($text-colour , 1 );
+                    }
+                }
+                i {
+                    font-size: nth($font-size , 8 );
+                    padding-left: 5px;
+                }
+            }
+        }
+    }
+
+}

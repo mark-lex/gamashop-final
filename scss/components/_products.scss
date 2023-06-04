@@ -1,0 +1,164 @@
+/*-----SERVICIOS-----*/
+
+/*-intro-products-*/
+.intro-products {
+    @extend %intro;
+    div {
+        @extend %div;
+        h1 {
+            @extend %title;
+        }
+        p {
+            @extend %paragraph;
+        }
+    }
+    img{
+        @extend %img;
+    }
+}
+
+/*-galeria-*/
+.gallery {
+    margin-top: 100px;
+    h3 {
+        @include text (nth($font-size , 6 ), 400, 5px, 20px 10px 10px 10px);
+        text-transform: uppercase;
+        text-align: center;
+    }
+    h2 {
+        @include text (nth($font-size , 5 ), 200, 0.5px, 0px 10px 10px 10px);
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .gallery-content {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        color: nth($text-colour , 1 );
+        .gallery-products {
+            max-width: 350px;
+            margin: 20px 20px;
+            img {
+                width: 350px;
+                height: 100%;
+                object-fit: contain;
+                margin-bottom: 10px;
+                border-radius: 16px;
+            }
+            h4 {
+                @include text (nth($font-size , 7 ), 400, 2px, 10px 0px 0px 0px);
+                text-transform: uppercase;
+            }
+            .price {
+                font-weight: 200;
+                font-size: nth($font-size , 8 );
+                margin-bottom: 20px;
+            }
+            .shop-btn {
+                display: flex;
+                align-items: center;
+                font-size: map-get($button , fnt-size );
+                font-weight: map-get($button , fnt-weight );
+                text-decoration: map-get($button , deco );
+                background-color: $bg-colour-white;
+                color: map-get($button , fnt-colour );
+                border: map-get($button , bord );
+                border-radius: map-get($button , b-radius );
+                padding: map-get($button , padd );
+                transition: map-get($button , trans );
+                cursor: map-get($button , cur );
+                &::before {
+                    font-family: boxicons!important;
+                    font-size: nth($font-size , 8 );
+                    padding-right: 5px;
+                    content: "\ea36";
+                }
+                &:hover {
+                    color: nth($text-colour , 3 );
+                    background-color: nth($colour-palette , 5 );
+                }
+            }
+        }
+    }
+    .modal-container {
+        margin: 0 10%;
+        width: 80%;
+        max-height: 80vh;
+        color: nth($text-colour, 1 );
+        background-color: $bg-colour-white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        overflow: overlay;
+        z-index: 9;
+        top: 12vh;
+        border-radius: 1rem;
+        box-shadow: 4px 4px 16px 0px rgba(19,24,21,0.4);
+        &::-webkit-scrollbar {
+            width: 0;
+            position:absolute;
+        }
+        .modal-header {
+            width: 100%;
+            position: sticky;
+            top: 0;
+            z-index: 1;
+            display: flex;
+            justify-content: space-around;
+            align-items: baseline;
+            color: nth($text-colour , 3 );
+            background-color: $bg-colour-modal-header;
+            .modal-header-title {
+                @include text (nth($font-size , 6 ), 400, 2px, 10px 0px 0px 0px);
+                text-transform: uppercase;
+            }
+            .modal-header-button {
+                cursor: pointer;
+                font-size: nth($font-size , 6 );
+                &:hover {
+                    color: nth($extra-colour , 8 );
+                    transition: 300ms ease-in;
+                }
+            }
+        }
+        .modal-cont {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            width: 70%;
+            margin: 15px 10px;
+            .delete-product {
+                cursor: pointer;
+            }
+            .bx {
+                font-size: nth($font-size , 6 );
+                color: nth($extra-colour , 7 );
+                &:hover {
+                    color: nth($extra-colour , 8 );
+                }
+            }
+            img {
+                width: 120px;
+                height: 120px;
+                border-radius: 8px;
+            }
+            .minus {
+                cursor: pointer;
+            }
+            .plus {
+                cursor: pointer;
+            }
+        }
+        .total-content {
+            width: 100%;
+            font-size: nth($font-size , 6 );
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+            border-top: dashed 1px nth($colour-palette , 8 );
+        }
+    }
+}

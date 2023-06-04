@@ -1,0 +1,84 @@
+/*-----CONTACTO-----*/
+
+/*-intro-contact-*/
+.intro-contact {
+    @extend %intro;
+    div {
+        @extend %div;
+        h1 {
+            @extend %title;
+        }
+        p {
+            @extend %paragraph;
+        }
+    }
+    img {
+        @extend %img;
+    }
+}
+
+/*-formulario-bt-*/
+.contact-form {
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        padding: 50px 80px 0px;
+        width: 100%;
+        .mb-3 {
+            font-weight: 200;
+            font-size: nth($font-size , 8 );
+            label {
+                margin-bottom: 10px;
+                color: nth($text-colour , 1 );
+                font-size: nth($font-size , 9 );
+            }
+            input {
+                font-size: map-get($input , fnt-size );
+                font-weight: map-get($input , fnt-weight );
+                border: map-get($input , bord );
+                border-radius: map-get($input , b-radius );
+                padding: map-get($input , padd );
+            }
+            .form-control {
+                font-size: map-get($input , fnt-size );
+                font-weight: map-get($input , fnt-weight );
+                border: map-get($input , bord );
+                border-radius: map-get($input , b-radius );
+                padding: map-get($input , padd );
+            }
+        }
+        .form-check {
+            .form-check-input {
+                background-color: transparent;
+                border-color: nth($colour-palette , 5 );
+                &:checked {
+                    background-color: nth($colour-palette , 5 );
+                    border-color: nth($colour-palette , 5 );
+                }
+            }
+            .form-check-label {
+                padding-left: 5px;
+            }
+        }
+        .btn-primary {
+            border: 1px solid nth($colour-palette , 5 );
+            background-color: nth($colour-palette , 5 );
+            padding: 10px 20px;
+            --bs-btn-bg: #9f63ff;
+            --bs-btn-border-color: #9f63ff;
+            --bs-btn-hover-bg: #5a31b7;
+            --bs-btn-hover-border-color: #5a31b7;
+            --bs-btn-active-bg: #5a31b7;
+            --bs-btn-active-border-color: #5a31b7;
+            --bs-btn-disabled-bg: #5a31b7;
+            --bs-btn-disabled-border-color: #5a31b7;
+            &:hover {
+                border: 1px solid nth($colour-palette , 3 );
+                background-color: nth($colour-palette , 3 );
+            }
+        }
+    }
+}

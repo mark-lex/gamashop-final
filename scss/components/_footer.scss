@@ -1,0 +1,72 @@
+/*-----FOOTER-----*/
+
+footer {
+    background-color: nth($colour-palette , 3 );
+    padding: 50px 0px;
+    color: nth($text-colour , 3 );
+    margin-top: 100px;
+    .box {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        img {
+            margin: 10px;
+            width: 200px;
+            height: 200px;
+        }
+        .redes {
+            h3 {
+                @include text (nth($font-size , 8 ), 400, 3px, 20px 0px 10px 0px);
+                text-transform: uppercase;
+            }
+            .list {
+                ul {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: left;
+                    align-items: flex-start;
+                    padding-left: 0;
+                    li {
+                        a {
+                            i {
+                                font-size: nth($font-size , 4 );
+                                color: nth($text-colour , 3 );
+                                padding-right: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        div {
+            h3 {
+                @include text (nth($font-size , 8 ), 400, 3px, 20px 0px 10px 0px);
+                text-transform: uppercase;
+            }
+            ul {
+                list-style: none;
+                padding-left: 0;
+                li {
+                    font-size: nth($font-size , 9 );
+                    margin: 10px 0px 0px 0px;
+                    padding-bottom: 5px;
+                    a {
+                        font-weight: 200;
+                        text-decoration: none;
+                        color: nth($text-colour , 3 ) ;
+                        transition: 300ms ease-in;
+                        &:hover {
+                            color: nth($colour-palette , 8 );
+                        }
+                    }
+                }
+            }
+        }
+    }
+    p {
+        font-weight: 200;
+        text-align: center;
+        color: nth($colour-palette , 6 );
+        margin-top: 20px;
+    }
+}

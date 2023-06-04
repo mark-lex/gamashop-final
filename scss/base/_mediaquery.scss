@@ -1,0 +1,1066 @@
+/*----- MEDIA QUERY -----*/
+
+/*MAX-WIDTH-768PX*/
+@media only screen and (max-width: 768px) {
+  /*header*/
+  header {
+    flex-direction: column;
+    padding-bottom: 10px;
+  }
+
+  header nav {
+    justify-content: center;
+  }
+
+  header .navbar .container-fluid .navbar-collapse .navbar-nav .nav-item .nav-link {
+    color: nth($text-colour , 3 );
+  }
+
+  header .navbar .container-fluid .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
+    text-decoration: none;
+  }
+
+  /*index*/
+  .servicios .servicios-tipos div {
+    width: 350px;
+    height: 500px;
+    padding: 0px 25px;
+    margin: 20px 0px;
+  }
+
+  .servicios .servicios-tipos div img {
+    width: 300px;
+    height: 200px;
+  }
+
+  .servicios .servicios-tipos div a {
+    font-size: map-get($btn-mq-home , fnt-size );
+    font-weight: map-get($btn-mq-home , fnt-weight );
+    text-decoration: map-get($btn-mq-home , deco );
+    color: map-get($btn-mq-home , fnt-colour );
+    background-color: map-get($btn-mq-home , bg-colour );
+    border: map-get($btn-mq-home , bord );
+    border-radius: map-get($btn-mq-home , b-radius );
+    padding: map-get($btn-mq-home , padd );
+    cursor: map-get($btn-mq-home , cur );
+  }
+
+  .servicios .servicios-tipos div a:hover {
+    background-color: nth($colour-palette , 4 );
+  }
+
+  .productos {
+    margin-top: 60px;
+  }
+
+  .productos .productos-contenedor {
+    justify-content: flex-start;
+    margin: 0px 34px;
+  }
+
+  .productos .productos-contenedor .productos-varios {
+    width: 350px;
+    height: 600px;
+    padding: 0px 25px;
+    margin: 20px 0px 0px;
+  }
+
+  .productos .productos-contenedor .productos-varios div img {
+    width: 300px;
+    height: 100%;
+  }
+
+  .productos .productos-contenedor .productos-varios a {
+    font-size: map-get($btn-mq-home , fnt-size );
+    font-weight: map-get($btn-mq-home , fnt-weight );
+    text-decoration: map-get($btn-mq-home , deco );
+    color: map-get($btn-mq-home , fnt-colour );
+    border: map-get($btn-mq-home , bord );
+    background-color: map-get($btn-mq-home , bg-colour );
+    padding: map-get($btn-mq-home , padd );
+    cursor: map-get($btn-mq-home , cur );
+  }
+
+  .productos .productos-contenedor .productos-varios a:hover {
+    background-color: nth($colour-palette , 4 );
+  }
+
+  .pedidos {
+    margin-top: 70px;
+  }
+
+  .suscribir h2 {
+    padding: 0px 50px;
+  }
+
+  .suscribir h3 {
+    padding: 0px 50px 10px 50px;
+  }
+
+  .suscribir .suscribir-bloque {
+    width: 700px;
+    height: 100%;
+    margin: auto;
+  }
+
+  .suscribir .suscribir-bloque img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 10px 0px 0px;
+  }
+
+  .suscribir .suscribir-formu {
+    width: 100%;
+    height: 100%;
+    border-radius: 0px 0px 10px 10px;
+  }
+
+  .suscribir .suscribir-bloque .suscribir-formu form div button {
+    font-size: map-get($btn-mq-home , fnt-size );
+    font-weight: map-get($btn-mq-home , fnt-weight );
+    text-decoration: map-get($btn-mq-home , deco );
+    color: map-get($btn-mq-home , fnt-colour );
+    background-color: map-get($btn-mq-home , bg-colour );
+    border: map-get($btn-mq-home , bord );
+    border-radius: map-get($btn-mq-home , b-radius );
+    padding: map-get($btn-mq-home , padd );
+    cursor: map-get($btn-mq-home , cur );
+  }
+
+  .suscribir .suscribir-bloque .suscribir-formu form div button:hover {
+    background-color: nth($colour-palette , 4 );
+  }
+
+  /*about*/
+  .intro {
+    flex-direction: column;
+  }
+
+  .intro div {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    text-align: center;
+  }
+
+  .intro img {
+    width: 100%;
+    height: 70vh;
+    border-radius: 0px;
+  }
+
+  .about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 80px;
+    padding: 0;
+    text-align: center;
+  }
+
+  .about p {
+    padding: 0;
+    margin: 0;
+  }
+
+  .generales {
+    height: 100%;
+  }
+
+  .generales h2 {
+    padding: 0px 50px;
+    margin-bottom: 10px;
+  }
+
+  .generales h3 {
+    padding: 20px 50px 10px 50px;
+    margin-bottom: 0;
+  }
+
+  .generales .generales-content {
+    width: 72%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 30px;
+  }
+
+  .generales .generales-content div img {
+    width: 100%;
+    height: 100%;
+  }
+
+  /*services*/
+  .intro-service {
+    flex-direction: column;
+  }
+
+  .intro-service div {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    text-align: center;
+  }
+
+  .intro-service img {
+    width: 100%;
+    height: 70vh;
+    border-radius: 0;
+  }
+
+  /*products*/
+  .intro-products {
+    flex-direction: column;
+  }
+
+  .intro-products div {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    text-align: center;
+  }
+
+  .intro-products img {
+    width: 100%;
+    height: 70vh;
+    border-radius: 0;
+  }
+
+  .gallery h2 {
+    padding: 0px 50px;
+  }
+
+  .gallery h3 {
+    padding: 20px 50px 10px 50px;
+    margin-bottom: 0;
+  }
+
+  .gallery .gallery-content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .gallery .gallery-content .gallery-products {
+    width: 350px;
+    height: 600px;
+    padding: 0px 25px;
+    margin: 20px 0px 0px;
+  }
+
+  .gallery .gallery-content .gallery-products div img {
+    width: 300px;
+    height: 100%;
+  }
+
+  .gallery .gallery-content .gallery-products a {
+    font-size: map-get($btn-mq , fnt-size );
+    font-weight: map-get($btn-mq , fnt-weight );
+    text-decoration: map-get($btn-mq , deco );
+    color: map-get($btn-mq , fnt-colour );
+    border: map-get($btn-mq , bord );
+    background-color: map-get($btn-mq , bg-colour );
+    padding: map-get($btn-mq , padd );
+    cursor: map-get($btn-mq , cur );
+  }
+  
+  .gallery .gallery-content .gallery-products a:hover {
+    background-color: nth($colour-palette , 4 );
+  }
+
+  /*contact*/
+  .intro-contact {
+    flex-direction: column;
+  }
+
+  .intro-contact div {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    text-align: center;
+  }
+
+  .intro-contact img {
+    width: 100%;
+    height: 70vh;
+    border-radius: 0;
+  }
+
+  .contact-form {
+    padding: 80px 50px;
+  }
+
+  .contact-form form {
+    margin: auto;
+    padding: 0;
+  }
+
+  .contact-form form .btn button {
+    width: 150px;
+  }
+
+  /*footer*/
+  footer .box {
+    margin: 0px 30px;
+  }
+
+  footer .box img {
+    width: 150px;
+    height: 150px;
+    margin: 10px 50px 10px 10px;
+  }
+
+  footer .box .redes .list ul li a i:hover {
+    color: nth($colour-palette , 9 );
+  }
+}
+
+/*MAX-WIDTH-576PX*/
+@media only screen and (max-width: 576px) {
+  /*generales*/
+  header {
+    flex-direction: column;
+    padding-bottom: 10px;
+  }
+
+  nav {
+    justify-content: center;
+  }
+
+  header nav ul {
+    margin: 0;
+  }
+
+  header nav ul li {
+    margin: 0px 10px;
+  }
+
+  /*index*/
+  .hero {
+    height: 90vh;
+  }
+  .hero h1 {
+    margin: 0px 65px;
+    padding: 0px 0px 20px 0px;
+  }
+
+  .hero p {
+    margin: 0px 40px 40px 65px;
+  }
+
+  .servicios {
+    margin-top: 70px;
+  }
+
+  .servicios h2 {
+    padding: 0px 50px 30px 50px;
+    margin-bottom: 0;
+  }
+
+  .servicios h3 {
+    padding: 20px 50px 10px 50px;
+  }
+
+  .servicios .servicios-tipos div {
+    width: 550px;
+    height: 550px;
+    padding: 0px 25px;
+    margin: 20px 0px;
+  }
+
+  .servicios .servicios-tipos div img {
+    width: 500px;
+    height: 300px;
+  }
+
+  .productos {
+    margin-top: 50px;
+  }
+
+  .productos h2 {
+    padding: 0px 50px;
+    margin-bottom: 0;
+  }
+
+  .productos h3 {
+    padding: 20px 50px 10px 50px;
+    margin-bottom: 0;
+  }
+
+  .productos .productos-contenedor {
+    justify-content: center;
+  }
+
+  .productos .productos-contenedor .productos-varios {
+    width: 450px;
+    height: 650px;
+    margin: 40px 20px 0px;
+  }
+
+  .productos .productos-contenedor .productos-varios div img {
+    width: 400px;
+    height: 100%;
+  }
+
+  .pedidos {
+    margin-top: 60px;
+  }
+
+  .pedidos h2 {
+    padding: 0px 50px;
+    margin-bottom: 0;
+  }
+
+  .pedidos h3 {
+    padding: 20px 50px 10px 50px;
+    margin-bottom: 0;
+  }
+
+  .pedidos .pedidos-pasos {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pedidos .pedidos-pasos div {
+    width: 250px;
+    height: 250px;
+    margin: 20px;
+  }
+
+  .pedidos .pedidos-pasos div img {
+    width: 80px;
+    height: 80px;
+    margin: 30px;
+  }
+
+  .suscribir {
+    margin-top: 80px;
+  }
+
+  .suscribir .suscribir-bloque {
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+    height: 100%;
+  }
+
+  .suscribir .suscribir-bloque img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 10px 0px 0px;
+  }
+
+  .suscribir .suscribir-formu {
+    width: 100%;
+    height: 100%;
+    border-radius: 0px 0px 10px 10px;
+  }
+
+  /*about*/
+  .intro {
+    flex-direction: column;
+  }
+
+  .intro div {
+    padding-top: 50px;
+    padding-bottom: 20px;
+  }
+
+  .intro img {
+    width: 100%;
+    height: 70vh;
+    border-radius: 0;
+  }
+
+  .about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 80px 50px 50px 50px;
+    padding: 0;
+  }
+
+  .about p {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+
+  .generales {
+    height: 100%;
+    margin-bottom: 60px;
+  }
+
+  .generales h2 {
+    padding: 0px 50px;
+    margin-bottom: 0;
+  }
+
+  .generales h3 {
+    padding: 20px 50px 10px 50px;
+    margin-bottom: 0;
+  }
+
+  .generales .generales-content {
+    width: 72%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 30px;
+  }
+
+  /*services*/
+  .intro-service {
+    flex-direction: column;
+  }
+
+  .intro-service div {
+    padding-top: 50px;
+    padding-bottom: 20px;
+  }
+
+  .intro-service img {
+    width: 100%;
+    height: 70vh;
+    border-radius: 0;
+  }
+
+  .service-various h2 {
+    padding: 0px 50px;
+    margin-bottom: 0;
+  }
+
+  .service-various h3 {
+    padding: 20px 50px 10px 50px;
+    margin-bottom: 0;
+  }
+
+  .service-various .type {
+    margin: 40px 50px 5px 50px;
+    padding-top: 0px;
+  }
+
+  .service-various .type h3 {
+    font-size: 1.2rem;
+    letter-spacing: 3px;
+    padding: 20px 0px 10px 0px;
+    text-align: center;
+  }
+
+  .service-various .line {
+    width: 190px;
+    height: 0px;
+    margin: 0px 70px;
+  }
+
+  .service-various .stock {
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    align-items: flex-start;
+    border-radius: 0;
+    padding: 30px 0px;
+    margin-bottom: 80px;
+  }
+
+  .service-various .stock .stock-a {
+    margin: 0px 50px 20px 50px;
+  }
+
+  .service-various .stock .stock-a h3 {
+    padding: 40px 0px 10px 0px;
+  }
+
+  .service-various .stock .stock-a p {
+    margin: 0;
+  }
+
+  /*products*/
+  .intro-products {
+    flex-direction: column;
+  }
+
+  .intro-products div {
+    padding-top: 50px;
+    padding-bottom: 20px;
+  }
+
+  .intro-products img {
+    width: 100%;
+    height: 70vh;
+    border-radius: 0;
+  }
+
+  .gallery h2 {
+    padding: 0px 50px;
+    margin-bottom: 0;
+  }
+
+  .gallery h3 {
+    padding: 20px 50px 10px 50px;
+    margin-bottom: 0;
+  }
+
+  .gallery .gallery-content {
+    justify-content: center;
+  }
+
+  .gallery .gallery-content .gallery-products {
+    width: 450px;
+    height: 650px;
+    margin: 40px 20px 0px;
+  }
+
+  .gallery .gallery-content .gallery-products div img {
+    width: 400px;
+    height: 100%;
+  }
+
+  /*contact*/
+  .intro-contact {
+    flex-direction: column;
+  }
+
+  .intro-contact div {
+    padding-top: 50px;
+    padding-bottom: 20px;
+  }
+
+  .intro-contact img {
+    width: 100%;
+    height: 70vh;
+    border-radius: 0;
+  }
+
+  .contact-form {
+    padding: 100px 50px;
+  }
+
+  .contact-form form {
+    margin: auto;
+    padding: 0;
+  }
+
+  .contact-form form .form-data .inputs div input {
+    height: 48px;
+    padding: 12px;
+    border-radius: 8px;
+  }
+
+  .contact-form form .comments textarea {
+    padding: 12px;
+    border-radius: 8px;
+  }
+
+  .contact-form form .btn button {
+    width: 120px;
+    border-radius: 8px;
+    padding: 12px;
+  }
+
+  /*footer*/
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  footer p {
+    padding: 0px 65px;
+  }
+
+  footer .box {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0px 65px;
+  }
+
+  footer .box div ul {
+    padding-left: 10px;
+    margin-bottom: 0;
+  }
+
+  footer .box div h3 {
+    margin-bottom: 0;
+  }
+}
+
+/*MAX-WIDTH-430PX*/
+@media only screen and (max-width: 430px) {
+  /*header*/
+  header {
+    flex-direction: column;
+    padding-bottom: 15px;
+  }
+
+  header nav {
+    justify-content: center;
+  }
+
+  header nav ul {
+    margin: 0;
+  }
+
+  header nav ul li {
+    margin: 0px 5px;
+  }
+
+  .hero {
+    height: 100vh;
+  }
+
+  .hero h1 {
+    margin: 0px 25px;
+    padding: 0px 0px 20px 0px;
+  }
+
+  .hero p {
+    margin: 10px 40px 40px 40px;
+  }
+
+  .servicios {
+    margin-top: 80px;
+  }
+
+  .servicios h3 {
+    padding: 10px 20px;
+  }
+
+  .servicios h2 {
+    padding: 0px 20px;
+    margin-bottom: 0;
+  }
+
+  .servicios .servicios-tipos {
+    margin-top: 30px;
+    height: 100%;
+  }
+
+  .servicios .servicios-tipos div {
+    width: 100%;
+    height: 520px;
+    padding: 0px 25px;
+    margin: 20px 0px;
+  }
+
+  .servicios .servicios-tipos div img {
+    width: 100%;
+    height: 250px;
+  }
+
+  .productos {
+    margin-top: 50px;
+  }
+
+  .productos h3 {
+    padding: 10px 20px;
+    margin-bottom: 0;
+  }
+
+  .productos h2 {
+    padding: 0px 20px;
+    margin-bottom: 0;
+  }
+
+  .productos .productos-contenedor {
+    justify-content: center;
+  }
+
+  .productos .productos-contenedor .productos-varios {
+    width: 400px;
+    height: 650px;
+    margin: 30px 0px 0px;
+  }
+
+  .productos .productos-contenedor .productos-varios div img {
+    width: 350px;
+    height: 100%;
+  }
+
+  .pedidos {
+    margin-top: 50px;
+  }
+
+  .pedidos h3 {
+    padding: 10px 20px;
+    margin-bottom: 0;
+  }
+
+  .pedidos h2 {
+    padding: 0px 20px;
+    margin-bottom: 0;
+  }
+
+  .pedidos .pedidos-pasos {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pedidos .pedidos-pasos div {
+    width: 250px;
+    height: 250px;
+    margin: 30px;
+  }
+
+  .pedidos .pedidos-pasos div img {
+    width: 80px;
+    height: 80px;
+    margin: 20px;
+  }
+
+  .suscribir {
+    margin-top: 70px;
+  }
+
+  .suscribir h3 {
+    padding: 10px 20px;
+    margin-bottom: 0;
+  }
+
+  .suscribir h2 {
+    padding: 0px 20px;
+    margin-bottom: 0;
+  }
+
+  .suscribir .suscribir-bloque {
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    height: 100%;
+    margin-top: 30px;
+  }
+
+  .suscribir .suscribir-bloque .suscribir-formu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+    background-color: $bg-colour;
+    padding: 30px 20px;
+    border-radius: 0px 0px 10px 10px;
+    width: 400px;
+    height: 100%;
+  }
+
+  /*about*/
+  .intro {
+    flex-direction: column;
+  }
+
+  .intro div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 100%;
+    padding-top: 40px;
+    padding-bottom: 20px;
+  }
+
+  .intro img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+  }
+
+  .about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 50px 40px 50px;
+    padding: 0;
+  }
+
+  .about p {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+
+  .generales {
+    height: 100%;
+    padding-top: 40px;
+    margin-bottom: 50px;
+  }
+
+  .generales h3 {
+    padding: 10px 20px;
+    margin-bottom: 0;
+  }
+
+  .generales h2 {
+    padding: 0px 20px;
+    margin-bottom: 0;
+  }
+
+  .generales .generales-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+  }
+
+  /*services*/
+  .intro-service {
+    flex-direction: column;
+  }
+
+  .intro-service div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 100%;
+    padding-top: 40px;
+    padding-bottom: 20px;
+  }
+
+  .intro-service img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+  }
+
+  .service-various {
+    margin-top: 50px;
+    text-align: center;
+  }
+
+  .service-various h3 {
+    padding: 10px 20px;
+    margin-bottom: 0;
+  }
+
+  .service-various h2 {
+    padding: 0px 20px;
+    margin-bottom: 0;
+  }
+
+  .service-various .type {
+    margin: 40px 20px 0px 20px;
+    padding-top: 0px;
+  }
+
+  .service-various .line {
+    width: 190px;
+    height: 0px;
+    margin: 0px 70px;
+  }
+
+  .service-various .stock {
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    align-items: flex-start;
+    border-radius: 0;
+    padding: 20px 0px;
+    margin-bottom: 70px;
+  }
+
+  /*products*/
+  .intro-products {
+    flex-direction: column;
+  }
+
+  .intro-products div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 100%;
+    padding-top: 40px;
+    padding-bottom: 20px;
+  }
+
+  .intro-products img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+  }
+
+  .gallery {
+    margin-top: 50px;
+  }
+
+  .gallery h3 {
+    padding: 10px 20px;
+    margin-bottom: 0;
+  }
+
+  .gallery h2 {
+    padding: 0px 20px;
+    margin-bottom: 0;
+  }
+
+  .gallery .gallery-content {
+    justify-content: center;
+    padding-top: 0px;
+  }
+
+  .gallery .gallery-content .gallery-products {
+    width: 400px;
+    height: 620px;
+    margin: 30px 0px 0px;
+  }
+
+  .gallery .gallery-content .gallery-products div img {
+    width: 350px;
+    height: 100%;
+  }
+
+  /*contact*/
+  .intro-contact {
+    flex-direction: column;
+  }
+
+  .intro-contact div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 100%;
+    padding-top: 40px;
+    padding-bottom: 20px;
+  }
+
+  .intro-contact img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+  }
+
+  .contact-form {
+    margin: 0;
+    padding: 50px 0px;
+  }
+
+  .contact-form form {
+    margin: auto;
+    padding: 20px;
+  }
+
+  .contact-form form .form-data .inputs div input {
+    width: 100%;
+    height: 56px;
+    padding: 12px;
+    border-radius: 8px;
+  }
+
+  .contact-form form .comments textarea {
+    padding: 12px;
+    border-radius: 8px;
+  }
+
+  .contact-form form .check .container {
+    font-size: 0.9rem;
+  }
+
+  .contact-form form .btn button {
+    width: 100px;
+    border-radius: 8px;
+    padding: 12px;
+  }
+}

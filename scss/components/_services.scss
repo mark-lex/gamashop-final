@@ -1,0 +1,68 @@
+/*-----SERVICIOS-----*/
+
+/*-intro-service-*/
+.intro-service {
+    @extend %intro;
+    div {
+        @extend %div;
+        h1 {
+            @extend %title;
+        }
+        p {
+            @extend %paragraph;
+        }
+    }
+    img {
+        @extend %img;
+    }
+}
+
+/*-service-various-*/
+.service-various {
+    text-align: center;
+    margin-top: 100px;
+    color: nth($text-colour , 1 );
+    h3 {
+        @include text (nth($font-size , 6 ), 400, 5px, 20px 10px 10px 10px);
+        text-transform: uppercase;
+    }
+    h2 {
+        @include text (nth($font-size , 5 ), 200, 0.5px, 0px 10px 10px 10px);
+        margin-bottom: 30px;
+    }
+    .tabs-content {
+        background-color: rgba(240, 223, 255, 0.4);
+        color: nth($text-colour , 1 );
+        width: 70%;
+        height: 100%;
+        margin: 50px auto;
+        border-radius: 10px;
+        padding: 20px;
+        text-align: left;
+        .nav-pills {
+            --bs-nav-pills-link-active-bg: #9f63ff;
+            justify-content: space-evenly;
+            align-items: center;
+            .nav-item {
+                .nav-link {
+                    color: nth($text-colour , 1 );
+                    }
+                .active {
+                    color: nth($text-colour , 3 );
+                }
+            }
+        }
+        .tab-content {
+            .tab-pane {
+                h3 {
+                    @include text (nth($font-size , 6 ), 400, 5px, 20px 0px 20px 10px);
+                    text-align: left;
+                }
+                p {
+                    text-align: left;
+                    padding-left: 10px;
+                }
+            }
+        }
+    }
+}
