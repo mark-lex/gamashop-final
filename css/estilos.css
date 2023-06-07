@@ -597,7 +597,7 @@ header {
       text-align: left;
       padding-left: 10px; }
 
-/*-----SERVICIOS-----*/
+/*-----PRODUCTOS-----*/
 /*-intro-products-*/
 /*-galeria-*/
 .gallery {
@@ -665,7 +665,7 @@ header {
   .gallery .modal-container {
     margin: 0 10%;
     width: 80%;
-    max-height: 80vh;
+    max-height: 82vh;
     color: #131815;
     background-color: white;
     display: flex;
@@ -724,13 +724,38 @@ header {
         cursor: pointer; }
       .gallery .modal-container .modal-cont .plus {
         cursor: pointer; }
+    .gallery .modal-container .modal-body {
+      margin-top: 30px;
+      font-size: 1.4rem; }
+    .gallery .modal-container h2 {
+      padding: 0 10px 0px 10px; }
     .gallery .modal-container .total-content {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-around;
+      align-items: center;
       width: 100%;
       font-size: 1.5rem;
       text-align: center;
       padding: 20px;
-      margin-top: 20px;
+      margin: 20px 0 10px;
       border-top: dashed 1px #dfc0ff; }
+      .gallery .modal-container .total-content p {
+        margin-bottom: 0; }
+      .gallery .modal-container .total-content .erase-btn {
+        font-size: 1rem;
+        font-weight: 300;
+        text-decoration: none;
+        background-color: white;
+        color: #9f63ff;
+        border: 1px solid #9f63ff;
+        border-radius: 10px;
+        padding: 8px 15px;
+        transition: 300ms ease-in;
+        cursor: pointer; }
+        .gallery .modal-container .total-content .erase-btn:hover {
+          color: white;
+          background-color: #9f63ff; }
 
 /*-----CONTACTO-----*/
 /*-intro-contact-*/

@@ -56,7 +56,6 @@ if (cart.length > 0) {
         });
 
         let del = cartCont.querySelector (".delete-product");
-
         del.addEventListener("click", () => {
             Toastify({
                 text: "Producto eliminado",
@@ -73,7 +72,7 @@ if (cart.length > 0) {
                 },
                 onClick: function(){} // Callback after click
             }).showToast();
-            
+
             delProduct(prod.id);
         });
     });
@@ -83,12 +82,41 @@ if (cart.length > 0) {
 
     const totalBuying = document.createElement("div");
     totalBuying.className = "total-content";
-    totalBuying.innerHTML = `Total a pagar: S/${total}`;
+    totalBuying.innerHTML = `
+    <p>Total a pagar: S/${total}</p>
+    `;
     modalContainer.append(totalBuying);
+
+    const eraseCart = document.createElement ("button");
+    eraseCart.className = "erase-btn";
+    eraseCart.innerText = `Vaciar carrito
+    `;
+    totalBuying.appendChild(eraseCart);
+
+    eraseCart.addEventListener("click", () => {
+
+        Swal.fire({
+            title: '¿Estás seguro?',
+            icon: 'question',
+            html: `Se van a borrar ${cart.reduce((acc,a) => acc + a.quantity, 0)} productos`,
+            showCancelButton: true,
+            focusConfirm: false,
+            confirmButtonText: 'Si',
+            cancelButtonText: 'No'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                cart = [];
+                saveLocal();
+                paintCart(); 
+                cartCounter();
+            }
+        })
+    });
+
 }else{
     const modalText = document.createElement("h2");
     modalText.className = "modal-body";
-    modalText.innerText = "Tu carrito está vacío";
+    modalText.innerText = "Tu carrito está vacío ☹️ ";
     modalContainer.append(modalText);
 }
 };
@@ -114,5 +142,4 @@ const cartCounter = () => {
     localStorage.setItem("cartLength", JSON.stringify(cartLength));
     quantityCart.innerText = JSON.parse(localStorage.getItem("cartLength"));
 };
-
 cartCounter();
