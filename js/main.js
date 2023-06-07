@@ -29,6 +29,22 @@ const getProd = async () => {
         content.append(shop);
     
         shop.addEventListener("click", () => {
+            Toastify({
+                text: "Producto agregado",
+                duration: 3000,
+                close: true,
+                gravity: "bottom", // `top` or `bottom`
+                position: "right", // `left`, `center` or `right`
+                stopOnFocus: true, // Prevents dismissing of toast on hover
+                style: {
+                    background: "linear-gradient(to right, #7b48db, #9f63ff)",
+                    borderRadius: "8px",
+                    textTransform: "uppercase",
+                    fontSize: "0.8rem"
+                },
+                onClick: function(){} // Callback after click
+            }).showToast();
+            
         const repeat = cart.some((repeatProduct) => repeatProduct.id === prod.id);
     
         if (repeat){

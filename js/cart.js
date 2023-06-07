@@ -21,6 +21,8 @@ const paintCart = () => {
 
     modalHeader.append(modalbutton);
 
+    //modal body
+if (cart.length > 0) {
     cart.forEach((prod) => {
         let cartCont = document.createElement("div");
         cartCont.className = "modal-cont";
@@ -56,16 +58,39 @@ const paintCart = () => {
         let del = cartCont.querySelector (".delete-product");
 
         del.addEventListener("click", () => {
+            Toastify({
+                text: "Producto eliminado",
+                duration: 3000,
+                close: true,
+                gravity: "bottom", // `top` or `bottom`
+                position: "right", // `left`, `center` or `right`
+                stopOnFocus: true, // Prevents dismissing of toast on hover
+                style: {
+                    background: "linear-gradient(to right, #7b48db, #9f63ff)",
+                    borderRadius: "8px",
+                    textTransform: "uppercase",
+                    fontSize: "0.8rem"
+                },
+                onClick: function(){} // Callback after click
+            }).showToast();
+            
             delProduct(prod.id);
         });
     });
 
+    //modal footer
     const total = cart.reduce((acc, a) => acc + a.price * a.quantity, 0);
 
     const totalBuying = document.createElement("div");
     totalBuying.className = "total-content";
     totalBuying.innerHTML = `Total a pagar: S/${total}`;
     modalContainer.append(totalBuying);
+}else{
+    const modalText = document.createElement("h2");
+    modalText.className = "modal-body";
+    modalText.innerText = "Tu carrito está vacío";
+    modalContainer.append(modalText);
+}
 };
 
 seeCart.addEventListener("click", paintCart);
