@@ -68,7 +68,7 @@ if (cart.length > 0) {
                     background: "linear-gradient(to right, #7b48db, #9f63ff)",
                     borderRadius: "8px",
                     textTransform: "uppercase",
-                    fontSize: "0.8rem"
+                    fontSize: "0.75rem"
                 },
                 onClick: function(){} // Callback after click
             }).showToast();

@@ -629,14 +629,15 @@ header {
         width: 350px;
         height: 100%;
         object-fit: contain;
-        margin-bottom: 10px;
+        margin-bottom: 0;
         border-radius: 16px; }
       .gallery .gallery-content .gallery-products h4 {
         font-size: 1.4rem;
         font-weight: 400;
         letter-spacing: 2px;
         padding: 10px 0px 0px 0px;
-        text-transform: uppercase; }
+        text-transform: uppercase;
+        padding: 20px 0px 0px 0px; }
       .gallery .gallery-content .gallery-products .price {
         font-weight: 200;
         font-size: 1.2rem;
@@ -1020,20 +1021,13 @@ footer {
   .gallery h3 {
     padding: 20px 50px 10px 50px;
     margin-bottom: 0; }
-  .gallery .gallery-content {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap; }
   .gallery .gallery-content .gallery-products {
-    width: 350px;
-    height: 600px;
-    padding: 0px 25px;
-    margin: 20px 0px 0px; }
-  .gallery .gallery-content .gallery-products div img {
-    width: 300px;
-    height: 100%; }
-  .gallery .gallery-content .gallery-products a {
+    max-width: 350px;
+    margin: 20px 0px; }
+  .gallery .gallery-content .gallery-products img {
+    width: 320px;
+    border-radius: 12px; }
+  .gallery .gallery-content .gallery-products .shop-btn {
     font-size: 1rem;
     font-weight: 300;
     text-decoration: none;
@@ -1042,7 +1036,34 @@ footer {
     background-color: #7b48db;
     padding: 8px 15px;
     cursor: pointer; }
-  .gallery .gallery-content .gallery-products a:hover {
+  .gallery .gallery-content .gallery-products .shop-btn:hover {
+    background-color: #7b48db; }
+  .gallery .modal-container .modal-header .modal-header-button:hover {
+    color: white;
+    transition: none; }
+  .gallery .modal-container .modal-cont {
+    width: 80%;
+    margin: 15px 0px; }
+  .gallery .modal-container .modal-cont p {
+    margin-bottom: 0; }
+  .gallery .modal-container .modal-cont .bx:hover {
+    color: #DB3549;
+    animation: none; }
+  .gallery .modal-container .total-content {
+    padding: 20px 0 10px;
+    margin: 20px 0; }
+  .gallery .modal-container .total-content p {
+    font-size: 1rem; }
+  .gallery .modal-container .total-content .erase-btn {
+    font-size: 1rem;
+    font-weight: 300;
+    text-decoration: none;
+    color: white;
+    border: 0px;
+    background-color: #7b48db;
+    padding: 8px 15px;
+    cursor: pointer; }
+  .gallery .modal-container .total-content .erase-btn:hover {
     background-color: #7b48db; }
   /*contact*/
   .intro-contact {
@@ -1245,6 +1266,8 @@ footer {
     width: 100%;
     height: 70vh;
     border-radius: 0; }
+  .gallery {
+    margin-top: 60px; }
   .gallery h2 {
     padding: 0px 50px;
     margin-bottom: 0; }
@@ -1254,12 +1277,23 @@ footer {
   .gallery .gallery-content {
     justify-content: center; }
   .gallery .gallery-content .gallery-products {
-    width: 450px;
-    height: 650px;
-    margin: 40px 20px 0px; }
-  .gallery .gallery-content .gallery-products div img {
+    max-width: 400px;
+    margin: 40px 0; }
+  .gallery .gallery-content .gallery-products img {
     width: 400px;
-    height: 100%; }
+    border-radius: 16px; }
+  .gallery .modal-container .modal-cont {
+    width: 90%;
+    margin: 20px 0px; }
+  .gallery .modal-container .modal-cont img {
+    width: 80px;
+    height: 80px; }
+  .gallery .modal-container .modal-cont h5 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0; }
+  .gallery .modal-container .modal-body {
+    margin-bottom: 30px; }
   /*contact*/
   .intro-contact {
     flex-direction: column; }
@@ -1511,12 +1545,25 @@ footer {
     justify-content: center;
     padding-top: 0px; }
   .gallery .gallery-content .gallery-products {
-    width: 400px;
-    height: 620px;
-    margin: 30px 0px 0px; }
-  .gallery .gallery-content .gallery-products div img {
+    margin: 30px 0; }
+  .gallery .gallery-content .gallery-products img {
     width: 350px;
-    height: 100%; }
+    border-radius: 12px; }
+  .gallery .modal-container {
+    margin: 0 2.5%;
+    width: 95%; }
+  .gallery .modal-container .modal-cont {
+    width: 92%; }
+  .gallery .modal-container .modal-cont img {
+    width: 50px;
+    height: 50px; }
+  .gallery .modal-container .total-content {
+    margin: 20px 0;
+    padding: 15px 0 10px; }
+  .gallery .modal-container .modal-body {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 1.2rem; }
   /*contact*/
   .intro-contact {
     flex-direction: column; }

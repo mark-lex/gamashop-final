@@ -232,26 +232,17 @@
     margin-bottom: 0;
   }
 
-  .gallery .gallery-content {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-
   .gallery .gallery-content .gallery-products {
-    width: 350px;
-    height: 600px;
-    padding: 0px 25px;
-    margin: 20px 0px 0px;
+    max-width: 350px;
+    margin: 20px 0px
   }
 
-  .gallery .gallery-content .gallery-products div img {
-    width: 300px;
-    height: 100%;
+  .gallery .gallery-content .gallery-products img {
+    width: 320px;
+    border-radius: 12px;
   }
 
-  .gallery .gallery-content .gallery-products a {
+  .gallery .gallery-content .gallery-products .shop-btn {
     font-size: map-get($btn-mq , fnt-size );
     font-weight: map-get($btn-mq , fnt-weight );
     text-decoration: map-get($btn-mq , deco );
@@ -262,7 +253,50 @@
     cursor: map-get($btn-mq , cur );
   }
   
-  .gallery .gallery-content .gallery-products a:hover {
+  .gallery .gallery-content .gallery-products .shop-btn:hover {
+    background-color: nth($colour-palette , 4 );
+  }
+
+  .gallery .modal-container .modal-header .modal-header-button:hover {
+    color: nth($text-colour , 3 );
+    transition:none;
+  }
+
+  .gallery .modal-container .modal-cont {
+    width: 80%;
+    margin: 15px 0px;
+  }
+
+  .gallery .modal-container .modal-cont p {
+    margin-bottom: 0;
+  }
+
+  .gallery .modal-container .modal-cont .bx:hover {
+    color: nth($extra-colour , 7 );
+    animation: none;
+  }
+
+  .gallery .modal-container .total-content {
+    padding: 20px 0 10px;
+    margin: 20px 0;
+  }
+
+  .gallery .modal-container .total-content p {
+    font-size: nth($font-size , 9 );
+  }
+
+  .gallery .modal-container .total-content .erase-btn {
+    font-size: map-get($btn-mq , fnt-size );
+    font-weight: map-get($btn-mq , fnt-weight );
+    text-decoration: map-get($btn-mq , deco );
+    color: map-get($btn-mq , fnt-colour );
+    border: map-get($btn-mq , bord );
+    background-color: map-get($btn-mq , bg-colour );
+    padding: map-get($btn-mq , padd );
+    cursor: map-get($btn-mq , cur );
+  }
+
+  .gallery .modal-container .total-content .erase-btn:hover {
     background-color: nth($colour-palette , 4 );
   }
 
@@ -588,6 +622,9 @@
     border-radius: 0;
   }
 
+  .gallery{
+    margin-top: 60px;
+  }
   .gallery h2 {
     padding: 0px 50px;
     margin-bottom: 0;
@@ -603,14 +640,33 @@
   }
 
   .gallery .gallery-content .gallery-products {
-    width: 450px;
-    height: 650px;
-    margin: 40px 20px 0px;
+    max-width: 400px;
+    margin: 40px 0;
   }
 
-  .gallery .gallery-content .gallery-products div img {
+  .gallery .gallery-content .gallery-products img {
     width: 400px;
-    height: 100%;
+    border-radius: 16px ;
+  }
+
+  .gallery .modal-container .modal-cont {
+    width: 90%;
+    margin: 20px 0px;
+  }
+
+  .gallery .modal-container .modal-cont img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .gallery .modal-container .modal-cont h5 {
+    font-size: nth($font-size , 9 );
+    font-weight: 600;
+    margin-bottom: 0;
+  }
+
+  .gallery .modal-container .modal-body {
+    margin-bottom: 30px;
   }
 
   /*contact*/
@@ -999,15 +1055,38 @@
     padding-top: 0px;
   }
 
-  .gallery .gallery-content .gallery-products {
-    width: 400px;
-    height: 620px;
-    margin: 30px 0px 0px;
+  .gallery .gallery-content .gallery-products{
+    margin: 30px 0;
   }
 
-  .gallery .gallery-content .gallery-products div img {
+  .gallery .gallery-content .gallery-products img {
     width: 350px;
-    height: 100%;
+    border-radius: 12px;
+  }
+
+  .gallery .modal-container {
+    margin: 0 2.5%;
+    width: 95%;
+  }
+
+  .gallery .modal-container .modal-cont {
+    width: 92%;
+  }
+
+  .gallery .modal-container .modal-cont img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .gallery .modal-container .total-content {
+    margin: 20px 0;
+    padding: 15px 0 10px;
+  }
+
+  .gallery .modal-container .modal-body {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: nth($font-size , 8 );
   }
 
   /*contact*/
